@@ -1,0 +1,10 @@
+name: SlimefunAddon
+version: ${project.version}
+author: CHANGEME
+description: A generic Slimefun-Addon
+website: https://github.com/TheBusyBiscuit/Slimefun4-Addon
+
+main: me.CHANGEME.slimefunaddon.SlimefunAddon
+depend: [Slimefun]
+
+api-version: 1.14
