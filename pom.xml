@@ -46,7 +46,7 @@
   	<dependency>
   		<groupId>org.bukkit</groupId>
   		<artifactId>bukkit</artifactId>
-  		<version>1.14.4-R0.1-SNAPSHOT</version>
+  		<version>1.15.1-R0.1-SNAPSHOT</version>
   		<scope>provided</scope>
   	</dependency>
   	<dependency>
@@ -54,12 +54,32 @@
   		<artifactId>CS-CoreLib</artifactId>
   		<version>master-SNAPSHOT</version>
   		<scope>provided</scope>
+  		<exclusions>
+  			<exclusion>
+  				<groupId>io.github.thebusybiscuit</groupId>
+  				<artifactId>cscorelib2</artifactId>
+  			</exclusion>
+  			<exclusion>
+  				<groupId>org.bstats</groupId>
+  				<artifactId>bstats-bukkit</artifactId>
+  			</exclusion>
+  		</exclusions>
   	</dependency>
   	<dependency>
   		<groupId>com.github.TheBusyBiscuit</groupId>
   		<artifactId>Slimefun4</artifactId>
   		<version>master-SNAPSHOT</version>
   		<scope>provided</scope>
+  		<exclusions>
+  			<exclusion>
+  				<groupId>io.github.thebusybiscuit</groupId>
+  				<artifactId>cscorelib2</artifactId>
+  			</exclusion>
+  			<exclusion>
+  				<groupId>org.bstats</groupId>
+  				<artifactId>bstats-bukkit</artifactId>
+  			</exclusion>
+  		</exclusions>
   	</dependency>
   </dependencies>
 </project>
