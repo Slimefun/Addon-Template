@@ -4,7 +4,7 @@ In the top left is a button "Use this template", click this to create your own A
 
 ## Changing some important things
 Navigate to `src/main/java` and rename the package and the .java File to your liking.<br>
-Suggestion: "me.%Your name%.%Your Project's name%" (all lower case) and "ProjectName.java"<br>
+Suggestion: "me.yourname.yourproject" (all lower case) and "ProjectName.java"<br>
 Example: "me.thebusybiscuit.cooladdon" and "CoolAddon.java"
 
 Navigate to `src/main/resources/plugin.yml` and change the "author" and "main" attributes.
