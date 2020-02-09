@@ -1,6 +1,7 @@
 package me.CHANGEME.slimefunaddon;
 
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,12 +27,17 @@ public class SlimefunAddon extends JavaPlugin {
 		// Slimefun4 also already comes with a bundled version of bStats
 		// You can use bStats to collect usage data about your plugin
 		// More info: https://bstats.org/getting-started
-		new Metrics(this);
+		// Set bStatsId to the id of your plugin
+		int bStatsId = -1;
+		new Metrics(this, bStatsId);
 		
 		// Create a new Category
 		// This Category will use this ItemStack
 		ItemStack categoryItem = new CustomItem(Material.DIAMOND, "&4Addon Category", "", "&a> Click to open");
-		Category category = new Category(categoryItem);
+		
+		// Give your Category a unique id.
+		NamespacedKey categoryId = new NamespacedKey(this, "addon_category");
+		Category category = new Category(categoryId, categoryItem);
 		
 		// Create a new Slimefun ItemStack
 		// This class has many constructors, it is very important that you give each item a unique id.
