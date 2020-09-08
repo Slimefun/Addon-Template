@@ -10,7 +10,6 @@ import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import me.mrCookieSlime.Slimefun.bstats.bukkit.Metrics;
 import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
 
@@ -24,13 +23,6 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
         if (cfg.getBoolean("options.auto-update")) {
             // You could start an Auto-Updater for example
         }
-
-        // Slimefun4 also already comes with a bundled version of bStats
-        // You can use bStats to collect usage data about your plugin
-        // More info: https://bstats.org/getting-started
-        // Set bStatsId to the id of your plugin
-        int bStatsId = -1;
-        new Metrics(this, bStatsId);
 
         // Create a new Category
         // This Category will use this ItemStack
