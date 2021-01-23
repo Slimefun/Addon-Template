@@ -5,7 +5,7 @@ In the top left is a button "Use this template", click this to create your own A
 ## How to create your own addon.
 This is a template repository that you can use to create your own Slimefun4 Addon.<br>
 We have also written an extensive step-by-step tutorial which you can find here:<br>
-https://github.com/TheBusyBiscuit/Slimefun4/wiki/Developer-Guide
+https://github.com/Slimefun/Slimefun4/wiki/Developer-Guide
 
 ## Changing some important things
 Navigate to `src/main/java` and rename the package and the .java File to your liking.<br>
