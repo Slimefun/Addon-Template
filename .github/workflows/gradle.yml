@@ -1,0 +1,24 @@
+name: Java CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Build with Gradle
+        run: ./gradlew build
+# Un-comment this part of the configuration if you want the artifacts to be uploaded automatically (delete this line as well)
+#
+#      - name: Upload result
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: Addon-Template # Change the name to your plugin name or anything you want
+#          path: build/libs
