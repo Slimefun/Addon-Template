@@ -1,0 +1,43 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+plugins {
+    id 'java'
+}
+
+group = 'me.CHANGEME'
+version = '1.0.0'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'papermc-repo'
+        url = 'https://papermc.io/repo/repository/maven-public/'
+    }
+    maven {
+        name = 'spigot-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    maven {
+        name = 'jitpack.io'
+        url = 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    implementation 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT' // Comment this line of code if you would like the plugin to be based on Paper's API
+    // implementation 'com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT' // Uncomment this line of code if you would like the plugin to be based on Paper's API
+    implementation 'com.github.Slimefun:Slimefun4:master-SNAPSHOT' // This downloads the latest version from github & compiles it, if you want to use a more stable version, please modify the last part of it where it says master-SNAPSHOT to a tag like RC-21
+}
+
+processResources {
+    from(sourceSets.main.resources.srcDirs) {
+        filter ReplaceTokens, tokens: [version: version]
+    }
+}
+
