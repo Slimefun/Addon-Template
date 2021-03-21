@@ -17,6 +17,6 @@ You may also want to change the description to something meaningful.
 
 Navigate to `build.gradle` and change the group id to "me.%Your name%".
 
-Navigate to `settings.gradle` and change the value in `rootProject.name` to your addon name
+Navigate to `settings.gradle` and change the value in `rootProject.name` to your GitHub repository name
 
 After that you are good to go, you can now start developing your own Addon for Slimefun4.
