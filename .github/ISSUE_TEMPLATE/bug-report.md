@@ -27,6 +27,6 @@ assignees: ''
 <!-- "latest" IS NOT A VERSION NUMBER. -->
 <!-- You can also just run "/sf versions" and show us a screenshot of that. -->
  - Minecraft Version:
- - <!-- Please Make sure you are using the latest and official Dev build and un official or RC build. -->
+ - <!-- Please Make sure you are using the latest and official Dev build and not an unofficial or RC build. -->
  - Slimefun Version:
  - Plugin Version: 
