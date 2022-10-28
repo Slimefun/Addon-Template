@@ -1,5 +1,6 @@
 package me.CHANGEME.slimefunaddon;
 
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
@@ -13,15 +14,21 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
+import java.io.File;
+
 public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
         // Read something from your config.yml
         Config cfg = new Config(this);
+        if (!new File(getDataFolder(), "config.yml").exists()) {
+            saveDefaultConfig();
+        }
+        //Auto updater for https://thebusybiscuit.github.io/builds/
+        if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
+            new GitHubBuildsUpdater(this, getFile(), "CHANGEME/ExampleAddon/master").start();
 
-        if (cfg.getBoolean("options.auto-update")) {
-            // You could start an Auto-Updater for example
         }
 
         /*
