@@ -16,4 +16,7 @@ public class BlankItems {
 
     public static final SlimefunItemStack JC_MACHINE = new SlimefunItemStack("JC_MACHINE", Material.BARRIER, "&f", LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), LoreBuilder.powerPerSecond(1), LoreBuilder.speed(1), LoreBuilder.powerBuffer(1),"&f");
 
+    //Generators
+
+    public static final SlimefunItemStack JC_GENERATOR = new SlimefunItemStack("JC_GENERATOR", Material.OBSIDIAN, "&f",LoreBuilder.machine(MachineTier.BASIC, MachineType.GENERATOR), LoreBuilder.powerBuffer(1), LoreBuilder.powerPerSecond(1));
 }
