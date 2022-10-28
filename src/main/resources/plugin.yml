@@ -18,7 +18,7 @@ website: https://github.com/Slimefun/Addon-Template
 version: ${project.version}
 
 ## This is the minimum minecraft version required to run your plugin.
-api-version: 1.14
+api-version: 1.16
 
 ## This is required and marks Slimefun as a plugin dependency.
 depend:
