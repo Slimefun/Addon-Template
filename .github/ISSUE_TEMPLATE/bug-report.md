@@ -26,8 +26,7 @@ assignees: ''
 <!-- We may also close your Issue if you are not providing the exact version numbers. -->
 <!-- "latest" IS NOT A VERSION NUMBER. -->
 <!-- You can also just run "/sf versions" and show us a screenshot of that. -->
-
  - Minecraft Version:
- - CS-CoreLib Version:
+ - <!-- Please Make sure you are using the latest and official Dev build and not an unofficial or RC build. -->
  - Slimefun Version:
  - Plugin Version: 
