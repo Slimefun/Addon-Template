@@ -75,8 +75,8 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        // You can return a link to your Bug Tracker instead of null here
-        return null;
+        //adds a link for people to report any bugs/errors/issues to your addon's github page
+        return "https://github.com/CHANGEME/ExampleAddon/issues";
     }
 
     @Override
