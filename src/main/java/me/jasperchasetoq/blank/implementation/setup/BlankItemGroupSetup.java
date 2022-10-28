@@ -14,7 +14,7 @@ public class BlankItemGroupSetup {
 
     //Sub Item Groups
     public static final SubItemGroup BlankSubGeneral = new SubItemGroup(new NamespacedKey(Blank.getInstance(), "SUB_GENERAL"), BlankNestedGeneral, new CustomItemStack(Material.BARRIER, "&fBlank General"));
-    public static final SubItemGroup BlankSubMachines = new SubItemGroup(new NamespacedKey(Blank.getInstance(), "SUB_MACHINES"), BlankNestedGeneral, new CustomItemStack(Material.BARRIER, "&fBlank Machines"));
-    public static final SubItemGroup BlankSubGenerators = new SubItemGroup(new NamespacedKey(Blank.getInstance(), "SUB_GENERATORS"), BlankNestedGeneral, new CustomItemStack(Material.BARRIER, "&fBlank Generator"));
+    public static final SubItemGroup BlankGeneralMachines = new SubItemGroup(new NamespacedKey(Blank.getInstance(), "SUB_MACHINES"), BlankNestedGeneral, new CustomItemStack(Material.BARRIER, "&fBlank Machines"));
+    public static final SubItemGroup BlankGeneralGenerators = new SubItemGroup(new NamespacedKey(Blank.getInstance(), "SUB_GENERATORS"), BlankNestedGeneral, new CustomItemStack(Material.BARRIER, "&fBlank Generator"));
 
 }

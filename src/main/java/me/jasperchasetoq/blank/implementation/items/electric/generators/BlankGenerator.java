@@ -20,7 +20,7 @@ public class BlankGenerator extends SlimefunItem implements EnergyNetProvider {
     private final int capacity;
 
     @ParametersAreNonnullByDefault
-    public BlankGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, int capacity) {
+    public BlankGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, int capacity, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
 
 
