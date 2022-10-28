@@ -15,5 +15,5 @@ public class BlankItems {
     //Machines
 
     public static final SlimefunItemStack JC_MACHINE = new SlimefunItemStack("JC_MACHINE", Material.BARRIER, "&f", LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE), LoreBuilder.powerPerSecond(1), LoreBuilder.speed(1), LoreBuilder.powerBuffer(1),"&f");
-    
+
 }

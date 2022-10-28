@@ -1,8 +1,8 @@
-name: SlimefunAddon
+name: Blank
 author: JasperChaseTOQ
 description: A slimefun 4 addon by JasperChaseTOQ
-main: me.jasperchasetoq.slimefunaddon.ExampleAddon
-website: https://github.com/JasperChaseTOQ/
+main: me.jasperchasetoq.blank.Blank
+website: https://github.com/JasperChaseTOQ/Blank
 version: ${project.version}
 api-version: 1.17
 depend: [Slimefun]

@@ -9,6 +9,5 @@ public class BlankItemSetup {
     }
 
     public static void setup(@Nonnull Blank plugin) {
-
     }
 }
