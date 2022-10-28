@@ -21,5 +21,7 @@ version: ${project.version}
 api-version: 1.16
 
 ## This is required and marks Slimefun as a plugin dependency.
-depend:
-- Slimefun
+depend: [Slimefun]
+
+## This is Optional and can be used to mark a plugin for possible integration and compatibility.
+softdepend: []
